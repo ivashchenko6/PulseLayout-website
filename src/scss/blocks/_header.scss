@@ -3,14 +3,43 @@ header {
     justify-content:space-between;
     align-items: center;
 
-    &__logo {
+    .header__logo {
         width: 250px;
         img {
-            width: 100%;
+            width: 90%;
         }
     }
-    &__official {
+    .header__official {
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFFFFF;
+        text-align: center;
+        
+        span {
+            display: block;
+            font-size: 18px;
+        }
+    }
 
+    .header__phone {
+        display: block;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        
+        
+
+        color: #FFFFFF;
+        &:hover {
+            color:#fff;
+
+        }
+    }
+
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 }
