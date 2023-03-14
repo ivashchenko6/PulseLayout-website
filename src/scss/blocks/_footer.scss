@@ -1,0 +1,76 @@
+.footer {
+    height: 630px;
+    position: relative;
+    &__info {
+        
+        position: absolute;
+        z-index: 1;
+        padding: 50px 68px 60px 68px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $main-color;
+        width: 460px;
+        height: 270px;
+    }
+
+    &__addr {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        /* identical to box height, or 100% */
+        margin-bottom: 36px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        text-decoration: none;
+        margin-bottom: 38px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    &__social {
+        margin: 0 auto;
+        width: 212px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__round {
+        position: relative;
+        z-index: 2;
+        @include central;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        width: 50px;
+        height: 50px;
+        &:hover {
+            transition: 0.5s all;
+            background-color: pink;
+            border: none;
+            
+            &::after {
+                
+                position: absolute;
+                z-index: 3;
+                content: '';
+                display: block;
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                border: 3px solid pink;
+                
+            }
+        }
+        
+        
+    }
+    
+}
