@@ -8,12 +8,16 @@
     font-weight: 500;
     text-transform: uppercase;
     color:#fff;
-
+    &:hover {
+        transition: 0.5s all;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
     &_main {
         width: 303px;
         height: 54px;
         font-size: 16px;
         color: #FFFFFF;
+        
 
     }
     &_submit {
@@ -21,5 +25,13 @@
         height: 55px;
         font-size: 16px;
         color:#fff;
+    }
+
+    &_mini {
+        width: 135px;
+        height: 44px;
+        font-size: 14px;
+        
+        
     }
 }
