@@ -478,7 +478,20 @@
                 display: none;
             }
         }
+    }   
+    .modal {
+        width: 350px;
+        height: 421px;
+
+        input {
+            width: 250px;
+        }
+
+        .button_submit {
+            width: 250px;
+        }
     }
+
 } 
 
 @media (max-width: 411px) {
@@ -563,6 +576,27 @@
     .feedback {
         &__item {
             width: 300px;
+        }
+    }
+
+    .modal {
+        
+
+
+        width: 310px;
+        height: 421px;
+        padding: 10px 20px 40px 20px;
+
+        .feed-form {
+            width: 220px;
+            @include central;
+        }
+        input {
+            width: 220px;
+        }
+
+        .button_submit {
+            width: 220px;
         }
     }
 }
